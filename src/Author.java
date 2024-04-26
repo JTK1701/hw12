@@ -1,6 +1,6 @@
 public class Author {
     private String firstName;
-    private String secondName = "null";
+    private String secondName;
     private String lastName;
 
     public Author(String firstName, String secondName, String lastName) {
@@ -26,23 +26,13 @@ public class Author {
         return this.lastName;
     }
 
-    public String toMerge() {
-        String chek = "null";
-        String toMerge;
-        if (chek.equals(secondName)) {
-            toMerge = firstName + " " + lastName;
-        } else {
-            toMerge = firstName + " " + secondName + " " + lastName;
-        }
-        return toMerge;
-    }
-    //на это не обращай, пожалуйста внимания, репетирую)
-    /*public String toString() {
-        String chek = "null";
-        if (chek.equals(secondName)) {
+
+    public String toString() {
+
+        if (secondName == null) {
             return this.firstName + " " + lastName+ ".";
         } else {
             return this.firstName + " " + this.secondName + " " + lastName + ". ";
         }
-    }*/
+    }
 }
