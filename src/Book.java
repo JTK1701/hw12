@@ -1,12 +1,12 @@
 public class Book {
     private int yearOfPublishing;
-    private Author name;
+    private Author author;
     private String title;
 
-    public Book(int yerOfPublishing, Author name, String title) {
-        this.yearOfPublishing = yerOfPublishing;
+    public Book(int yearOfPublishing, Author author, String title) {
+        this.yearOfPublishing = yearOfPublishing;
         this.title = title;
-        this.name = name;
+        this.author = author;
     }
 
 
@@ -18,11 +18,15 @@ public class Book {
         return this.yearOfPublishing;
     }
 
-    public Author getName() {
-        return this.name;
+    public Author getAuthor() {
+        return this.author;
     }
 
     public void setYearOfPublishing(int yearOfPublishing) {
         this.yearOfPublishing = yearOfPublishing;
     }
+    //Это тоже тут так просто))
+    /*public String toString() {
+        return "Автор - " + author + " Название - " + title + ". год выхода - " + yearOfPublishing + ".";
+    }*/
 }

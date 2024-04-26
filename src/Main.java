@@ -18,5 +18,6 @@ public class Main {
         System.out.println(author3.toMerge());
         System.out.println(book3.getTitle());
         System.out.println(book3.getYearOfPublishing());
+        //System.out.println(book1);
     }
 }

@@ -8,6 +8,7 @@ public class Author {
         this.secondName = secondName;
         this.lastName = lastName;
     }
+
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,6 +17,7 @@ public class Author {
     public String getFirstName() {
         return this.firstName;
     }
+
     public String getSecondName() {
         return this.secondName;
     }
@@ -34,5 +36,13 @@ public class Author {
         }
         return toMerge;
     }
-
+    //на это не обращай, пожалуйста внимания, репетирую)
+    /*public String toString() {
+        String chek = "null";
+        if (chek.equals(secondName)) {
+            return this.firstName + " " + lastName+ ".";
+        } else {
+            return this.firstName + " " + this.secondName + " " + lastName + ". ";
+        }
+    }*/
 }
